@@ -1,7 +1,5 @@
 dependencies:
   override:
-    ls -alt
-    ls *.xml
     - mvn -DskipTests clean install dependency:resolve-plugins dependency:go-offline
 
 test:
