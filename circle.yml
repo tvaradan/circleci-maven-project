@@ -1,7 +1,7 @@
 dependencies:
   override:
-    - run: ls -alt
-    - run: ls *.xml
+    - commands: ls -alt
+    - commands: ls *.xml
     - mvn -DskipTests clean install dependency:resolve-plugins dependency:go-offline
 
 test:
